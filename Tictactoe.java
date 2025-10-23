@@ -105,10 +105,75 @@ public class Tictactoe {
             }
         
     }
+    static void computerMove(){
+        int computerNumber = (int)(Math.random() * 9);
+        System.out.println(computerNumber);
+            switch(computerNumber){
+                case 0:
+                    if(box.get(0) == ' '){
+                        box.set(computerNumber, 'O');
+                    } else {
+                        computerMove();
+                    } break;
+                case 1:
+                    if(box.get(1) == ' '){
+                        box.set(computerNumber, 'O');
+                    } else {
+                        computerMove();
+                    } break;
+                case 2:
+                    if(box.get(2) == ' '){
+                        box.set(computerNumber, 'O');
+                    } else {
+                        computerMove();
+                    } break;
+                case 3:
+                    if(box.get(3) == ' '){
+                        box.set(computerNumber, 'O');
+                    } else {
+                        computerMove();
+                    } break;
+                case 4:
+                    if(box.get(4) == ' '){
+                        box.set(computerNumber, 'O');
+                    } else {
+                        computerMove();
+                    } break;
+                case 5:
+                    if(box.get(5) == ' '){
+                        box.set(computerNumber, 'O');
+                    } else {
+                        computerMove();
+                    } break;
+                case 6:
+                    if(box.get(6) == ' '){
+                        box.set(computerNumber, 'O');
+                    } else {
+                        computerMove();
+                    } break;
+                case 7:
+                    if(box.get(7) == ' '){
+                        box.set(computerNumber, 'O');
+                    } else {
+                        computerMove();
+                    } break;
+                case 8:
+                    if(box.get(8) == ' '){
+                        box.set(computerNumber, 'O');
+                    } else {
+                        computerMove();
+                    } break;
+                
+            }
+
+    }
+    
     public static void main(String[] args){
         createBox();
         showMap();
         playerMove();
+        showMap();
+        computerMove();
         showMap();
 
         
