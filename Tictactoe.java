@@ -60,46 +60,6 @@ public class Tictactoe {
     }
     // Deciding winner
     static void decideWinner(){
-        // Situations where the winner is player
-        if(box.get(0) == 'X' && box.get(1) == 'X' && box.get(2) == 'X'){ // first row 
-            winner = "Player";
-        }
-        if(box.get(3) == 'X' && box.get(4) == 'X' && box.get(5) == 'X'){ // second row 
-            winner = "Player";
-        }
-        if(box.get(6) == 'X' && box.get(7) == 'X' && box.get(8) == 'X'){ // third row 
-            winner = "Player";
-        }
-        if(box.get(0) == 'X' && box.get(3) == 'X' && box.get(6) == 'X'){ // first vertical 
-            winner = "Player";
-        }
-        if(box.get(1) == 'X' && box.get(4) == 'X' && box.get(7) == 'X'){ // second vertical 
-            winner = "Player";
-        }
-        if(box.get(2) == 'X' && box.get(5) == 'X' && box.get(8) == 'X'){ // third vertical 
-            winner = "Player";
-        }
-        // Situations where the winner is computer 
-
-        if(box.get(0) == 'O' && box.get(1) == 'O' && box.get(2) == 'O'){ // first row 
-            winner = "Computer";
-        }
-        if(box.get(3) == 'O' && box.get(4) == 'O' && box.get(5) == 'O'){ // second row 
-            winner = "Computer";
-        }
-        if(box.get(6) == 'O' && box.get(7) == 'O' && box.get(8) == 'O'){ // thirt row coompute
-            winner = "Computer";
-        }
-        if(box.get(0) == 'O' && box.get(3) == 'O' && box.get(6) == 'O'){ // first vertical 
-            winner = "Computer";
-        }
-        if(box.get(1) == 'O' && box.get(4) == 'O' && box.get(7) == 'O'){ // second verticalplayer
-            winner = "Computer";
-        }
-        if(box.get(2) == 'O' && box.get(5) == 'O' && box.get(8) == 'O'){ // left diagonal 
-            winner = "Computer";
-        }
-
         if(winner == "Player"){
             System.out.println("Player Won!");
             return;
@@ -107,6 +67,59 @@ public class Tictactoe {
             System.out.println("Computer Won!");
             return;
         } 
+        // Situations where the winner is player
+        if(box.get(0) == 'X' && box.get(1) == 'X' && box.get(2) == 'X'){ // first row player
+            winner = "Player";
+        }
+        if(box.get(3) == 'X' && box.get(4) == 'X' && box.get(5) == 'X'){ // second row player
+            winner = "Player";
+        }
+        if(box.get(6) == 'X' && box.get(7) == 'X' && box.get(8) == 'X'){ // third row player
+            winner = "Player";
+        }
+        if(box.get(0) == 'X' && box.get(3) == 'X' && box.get(6) == 'X'){ // first vertical player
+            winner = "Player";
+        }
+        if(box.get(1) == 'X' && box.get(4) == 'X' && box.get(7) == 'X'){ // second vertical player
+            winner = "Player";
+        }
+        if(box.get(2) == 'X' && box.get(5) == 'X' && box.get(8) == 'X'){ // third vertical player
+            winner = "Player";
+        }
+        if(box.get(0) == 'X' && box.get(4) == 'X' && box.get(8) == 'X'){ // left diagonal player
+            winner = "Player";
+        }
+        if(box.get(2) == 'X' && box.get(4) == 'X' && box.get(6) == 'X'){ // right diagonal player
+            winner = "Player";
+        }
+        // Situations where the winner is computer
+        if(box.get(0) == 'O' && box.get(1) == 'O' && box.get(2) == 'O'){ 
+            winner = "Computer";
+        }
+        if(box.get(3) == 'O' && box.get(4) == 'O' && box.get(5) == 'O'){ 
+            winner = "Computer";
+        }
+        if(box.get(6) == 'O' && box.get(7) == 'O' && box.get(8) == 'O'){ 
+            winner = "Computer";
+        }
+        if(box.get(0) == 'O' && box.get(3) == 'O' && box.get(6) == 'O'){ 
+            winner = "Computer";
+        }
+        if(box.get(1) == 'O' && box.get(4) == 'O' && box.get(7) == 'O'){ 
+            winner = "Computer";
+        }
+        if(box.get(2) == 'O' && box.get(5) == 'O' && box.get(8) == 'O'){ 
+            winner = "Computer";
+        }
+        if(box.get(0) == 'O' && box.get(4) == 'O' && box.get(8) == 'O'){ 
+            winner = "Computer";
+        }
+        if(box.get(2) == 'O' && box.get(4) == 'O' && box.get(6) == 'O'){ 
+            winner = "Computer";
+        }
+        
+
+
         // If all the boxes are filled
         if(box.get(0) != ' ' && box.get(1) != ' ' && box.get(2) != ' ' && box.get(3) != ' ' && box.get(4) != ' ' &&box.get(5) != ' ' && box.get(6) != ' ' && box.get(7) != ' ' && box.get(8) != ' '){
             if(winner == "Player"){
